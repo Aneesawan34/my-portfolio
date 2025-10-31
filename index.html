@@ -5,29 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-analytics.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
-
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      const firebaseConfig = {
-        apiKey: "AIzaSyDwK9gE_xRJBBIbytPiPZZubhPqWOJS48A",
-        authDomain: "my-portfolio-61019.firebaseapp.com",
-        projectId: "my-portfolio-61019",
-        storageBucket: "my-portfolio-61019.firebasestorage.app",
-        messagingSenderId: "372936493959",
-        appId: "1:372936493959:web:919baf1bd432a8b7196122",
-        measurementId: "G-14S7DCWC2C",
-      };
-
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
-    </script>
   </head>
   <body class="bg-gray-50 text-gray-800">
     <!-- Navbar -->
@@ -73,9 +50,14 @@
         <div class="grid md:grid-cols-3 gap-6">
           <div
             class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition"
+            onclick="window.location.href='face-recognition.html'"
+            style="cursor: pointer"
           >
-            <h4 class="font-semibold text-lg mb-2">Project 1</h4>
-            <p>Portfolio website built with Tailwind CSS and JavaScript.</p>
+            <h4 class="font-semibold text-lg mb-2">Face Recognition</h4>
+            <p>
+              This project is create with Teachable Machine to recognition of
+              Face and other devices
+            </p>
           </div>
           <div
             class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition"
